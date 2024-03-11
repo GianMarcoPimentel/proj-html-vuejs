@@ -6,50 +6,51 @@ export default {
         return {
             courses: [
                 {
-                    img: '',
-                    price:'',
-                    learn:'',
-                    lessons:'',
-                    students;'',
+                    image: '/images/course-02-480x298.jpg',
+                    price:'$40.00',
+                    learn:'Learning to Write as a Professional Author',
+                    lessons:'20 Lessons',
+                    students:'50 Students',
                 },
                 {
-                    img: '',
-                    price:'',
-                    learn:'',
-                    lessons:'',
-                    students;'',
+                    image: '/images/course-02-480x298.jpg',
+                    price:'Free',
+                    learn:'Customer-centric Info-Tech Strategies',
+                    lessons:'24 Lessons',
+                    students:'769 Students'
                 },
                 {
-                    img: '',
-                    price:'',
-                    learn:'',
-                    lessons:'',
-                    students;'',
+                    image: '/images/course-02-480x298.jpg',
+                    price:'$19.00',
+                    learn:'Open Programming Courses for Everyone: Phytomn',
+                    lessons:'17 Lessons',
+                    students:'62 Students'
                 },
                 {
-                    img: '',
-                    price:'',
-                    learn:'',
-                    lessons:'',
-                    students;'',
+                    image: '/images/course-02-480x298.jpg',
+                    price:'$26.00',
+                    learn:'Academic Listening and Note-taking',
+                    lessons:'14 Lessons',
+                    students:'67 Students'
                 },
                 {
-                    img: '',
-                    price:'',
-                    learn:'',
-                    lessons:'',
-                    students;'',
+                    image: '/images/course-02-480x298.jpg',
+                    price:'$39.00',
+                    learn:'Master jQuery in a Short Period of Time',
+                    lessons:'6 Lessons',
+                    students:'51 Students'
                 },
                 {
-                    img: '',
-                    price:'',
-                    learn:'',
-                    lessons:'',
-                    students;'',
+                    image: '/images/course-02-480x298.jpg',
+                    price:'$59.00',
+                    learn:'Introducing to Javascript for Beginners',
+                    lessons:'14 Lessons',
+                    students:'76 Students'
                 },
                 
             ]
-    },
+    }
+}
 }
 </script>
 
@@ -61,17 +62,26 @@ export default {
 
         </div>
 
-        <div id="courses">
-            <img src="" alt="">
+        <div
+        v-for="cours in courses"
+        id="courses" 
+        >
+            <img :src=" cours.image " alt="">
             <div id="description-cours">
 
-                <div class="price"></div>
+                <div class="price">
+                    {{ cours.price }}
+                </div>
 
                 <div class="learn"></div>
-
+                    {{  }}
                 <div>
-                    <div class="lessons"></div>
-                    <div class="students"></div>
+                    <div class="lessons">
+                        
+                    </div>
+                    <div class="students">
+
+                    </div>
                 </div>
 
             </div>
@@ -91,6 +101,17 @@ export default {
         
         text-transform: uppercase;
     }
+}
+#courses{
+    display: flex;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 #footer{
     text-align: center;
