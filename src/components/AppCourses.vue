@@ -13,35 +13,35 @@ export default {
                     students:'50 Students',
                 },
                 {
-                    image: '/images/course-02-480x298.jpg',
+                    image: '/images/stock-full-hd-03-480x298.jpg',
                     price:'Free',
                     learn:'Customer-centric Info-Tech Strategies',
                     lessons:'24 Lessons',
                     students:'769 Students'
                 },
                 {
-                    image: '/images/course-02-480x298.jpg',
+                    image: '/images/stock-full-hd-04-480x298.jpg',
                     price:'$19.00',
                     learn:'Open Programming Courses for Everyone: Phytomn',
                     lessons:'17 Lessons',
                     students:'62 Students'
                 },
                 {
-                    image: '/images/course-02-480x298.jpg',
+                    image: '/images/stock-full-hd-06-480x298.jpg',
                     price:'$26.00',
                     learn:'Academic Listening and Note-taking',
                     lessons:'14 Lessons',
                     students:'67 Students'
                 },
                 {
-                    image: '/images/course-02-480x298.jpg',
+                    image: '/images/course-featured-image-01-480x298.jpg',
                     price:'$39.00',
                     learn:'Master jQuery in a Short Period of Time',
                     lessons:'6 Lessons',
                     students:'51 Students'
                 },
                 {
-                    image: '/images/course-02-480x298.jpg',
+                    image: '/images/stock-full-hd-05-480x298.jpg',
                     price:'$59.00',
                     learn:'Introducing to Javascript for Beginners',
                     lessons:'14 Lessons',
@@ -61,29 +61,30 @@ export default {
             <h3>Featured Online Courses</h3>
 
         </div>
-
-        <div
-        v-for="cours in courses"
-        id="courses" 
-        >
-            <img :src=" cours.image " alt="">
-            <div id="description-cours">
-
-                <div class="price">
-                    {{ cours.price }}
-                </div>
-
-                <div class="learn"></div>
-                    {{  }}
-                <div>
-                    <div class="lessons">
-                        
+        <div class="choice">
+            <div
+            v-for="cours in courses"
+            id="courses" 
+            >
+                <img :src=" cours.image " alt="">
+                <div id="description-cours">
+    
+                    <div class="price">
+                        {{ cours.price }}
                     </div>
-                    <div class="students">
-
+    
+                    <div class="learn"></div>
+                        {{ cours.learn }}
+                    <div id="notions">
+                        <div class="lessons">
+                            {{ cours.lessons }}
+                        </div>
+                        <div class="students">
+                            {{ cours.students }}
+                        </div>
                     </div>
+    
                 </div>
-
             </div>
         </div>
 
@@ -95,6 +96,8 @@ export default {
 
 <style lang="scss">
 #heading{
+
+    margin-top: 40px;
     text-align: center;
     
     h6{
@@ -102,16 +105,29 @@ export default {
         text-transform: uppercase;
     }
 }
-#courses{
+.choice{
     display: flex;
-
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
 }
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+#courses{
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #notions{
+        display: flex;
+        gap : 30px;
+    }
 }
 #footer{
     text-align: center;
@@ -122,6 +138,8 @@ img{
         padding: 5px 20px;
         border: none;
         border-radius: 4px;
+
+        margin-top: 40px;
     }
 }
 </style>
