@@ -4,10 +4,13 @@ import AppNav from './components/AppNav.vue'
 
 import AppCourses from './components/AppCourses.vue'
 
+import AppStatistics from './components/AppStatistics.vue'
+
 export default {
   components:{
     AppNav,
     AppCourses,
+    AppStatistics,
   }
 }
 </script>
@@ -15,6 +18,7 @@ export default {
 <template>
   <AppNav></AppNav>
   <AppCourses></AppCourses>
+  <AppStatistics></AppStatistics>
 </template>
 
 <style >
