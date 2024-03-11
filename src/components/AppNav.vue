@@ -29,7 +29,10 @@ export default {
 
         <nav>
             <div class="logo">
-                MaxCoach
+            
+            <span class="logo-bold">Max</span>
+            <span>Coach</span>
+
             </div>
         
             <div class="links">
@@ -40,7 +43,7 @@ export default {
                 </li>
                 </ul>
         
-                <input type="text">
+                <input type="text" placeholder="Search">
         
             </div>
         </nav>
@@ -62,6 +65,15 @@ nav{
 
     padding: 10px 0px;
     color: #696969;
+
+    .logo{
+        display: flex;
+
+        color: #3f3a64;
+        .logo-bold{
+            font-weight: bold;
+        }
+    }
     
     .links{
         display: flex;
