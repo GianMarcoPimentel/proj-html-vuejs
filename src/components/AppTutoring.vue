@@ -52,6 +52,7 @@ export default{
             <div class="hookup">
                 {{ program.hookup }} <i class="fa-solid fa-arrow-right"></i>
             </div>
+            
         </div>
             
         </div>

@@ -36,13 +36,14 @@ export default {
         
                 <ul>
                 <li v-for="link in links">
-                    {{ link }}
+                    {{ link }} <i class="fa-solid fa-chevron-down"></i>
                 </li>
                 </ul>
                 
-                
+                <i class="fa-regular fa-circle-user"></i>
 
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" >
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
         
             </div>
         </nav>
