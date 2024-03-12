@@ -14,9 +14,12 @@ import AppSubscribe from './components/AppSubscribe.vue'
 
 import AppFooter from './components/AppFooter.vue'
 
+import AppHeader from './components/AppHeader.vue'
+
 export default {
   components:{
     AppNav,
+    AppHeader,
     AppCourses,
     AppTutoring,
     AppStatistics,
@@ -29,6 +32,7 @@ export default {
 
 <template>
   <AppNav></AppNav>
+  <AppHeader></AppHeader>
   <AppCourses></AppCourses>
   <AppTutoring></AppTutoring>
   <AppStatistics></AppStatistics>
