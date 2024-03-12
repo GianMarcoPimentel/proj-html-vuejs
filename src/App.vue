@@ -8,6 +8,8 @@ import AppTutoring from './components/AppTutoring.vue'
 
 import AppStatistics from './components/AppStatistics.vue'
 
+import AppStart from './components/AppStart.vue'
+
 import AppBlog from './components/AppBlog.vue'
 
 import AppSubscribe from './components/AppSubscribe.vue'
@@ -22,6 +24,7 @@ export default {
     AppHeader,
     AppCourses,
     AppTutoring,
+    AppStart,
     AppStatistics,
     AppBlog,
     AppSubscribe,
@@ -35,6 +38,7 @@ export default {
   <AppHeader></AppHeader>
   <AppCourses></AppCourses>
   <AppTutoring></AppTutoring>
+  <AppStart></AppStart>
   <AppStatistics></AppStatistics>
   <AppBlog></AppBlog>
   <AppSubscribe></AppSubscribe>

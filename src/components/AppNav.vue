@@ -29,10 +29,7 @@ export default {
 
         <nav>
             <div class="logo">
-            
-            <span class="logo-bold">Max</span>
-            <span>Coach</span>
-
+                <img src="/public/images/dark-logo.png" alt="">
             </div>
         
             <div class="links">
@@ -42,7 +39,9 @@ export default {
                     {{ link }}
                 </li>
                 </ul>
-        
+                
+                
+
                 <input type="text" placeholder="Search">
         
             </div>
@@ -59,6 +58,8 @@ export default {
     
 */
 nav{
+    height: 60px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +68,7 @@ nav{
     color: #696969;
 
     .logo{
+        height: 20px;
         display: flex;
 
         color: #3f3a64;
