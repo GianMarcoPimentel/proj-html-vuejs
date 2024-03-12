@@ -2,13 +2,54 @@
 export default{
     name:'AppStart',
 
+    data(){
+        return {
+            profiles: [
+                {
+                    presentation:"It's choice of quality for people with special needs",
+                    description:"I'm very strict perosn so I required everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+                    image:'/images/testimonial-avata-03.jpg',
+                    name:'Florence Themes',
+                    work:'/ Multimedia Admin',
+                },
+                {
+                    presentation:"High level of efficiency and scientific teaching methods",
+                    description:"I am free to learn at my own pace, follow my owm schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+                    image:'/images/testimonial-avata-02.jpg',
+                    name:'Mina Hollace',
+                    work:'/ Freelancer',
+                },
+                {
+                    presentation:"Profesional ream of specialisrs and passionate mentors at reach",
+                    description:"I nedd to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and prosfessional when dealing with students",
+                    image:'/images/testimonial-avata-04.jpg',
+                    name:'Madley Pondor',
+                    work:'/ IT Specialist',
+                },
+
+            ]
+        }
+    }
 }
 </script>
 
 <template>
 <div class="appstart">
-
-    
+    <div class="profile-cards">
+        <div 
+        v-for="profile in profiles"
+        class="cards">
+            <h2>{{ profile.presentation }}</h2>
+            <span>{{ profile.description }}</span>
+            <div class="profile">
+                <img :src=" profile.image" alt="">
+                <div class="profile-user">
+                    <h2>{{ profile.name }}</h2>
+                    <span>{{ profile.work }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="started-now">
             <div>
@@ -37,6 +78,31 @@ export default{
 <style>
 .appstart{
     background-color: #f8f8f8;
+}
+.profile-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    .cards{
+        width: calc(100% / 3 - (30px / 3 * 2));
+    }
+    .profile{
+        display: flex;
+        align-content: center;
+        gap: 20px;
+
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .profile-user{
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+        }
+    }
 }
 .started-now{
     display: flex;

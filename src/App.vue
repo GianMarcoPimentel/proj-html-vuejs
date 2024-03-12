@@ -43,8 +43,50 @@ export default {
   <AppBlog></AppBlog>
   <AppSubscribe></AppSubscribe>
   <AppFooter></AppFooter>
+
+  <button> <i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="carrello">
+
+    <i class="fa-solid fa-triangle"></i>
+    <i class="fa-solid fa-life-ring"></i>
+    <i class="fa-solid fa-book"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+
+  </div>
 </template>
 
-<style >
+<style scoped>
+button{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #20ad96;
+  color: white;
 
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  i{
+    font-size: 20px;
+  }
+}
+.carrello{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  fill: inherit;
+  padding: 10px;
+  border: lightgray solid 1px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+
+  position:fixed;
+  top: 100px;
+  right: 0px;
+}
 </style>
