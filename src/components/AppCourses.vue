@@ -74,9 +74,11 @@ export default {
                         <div class="price">
                             {{ cours.price }}
                         </div>
-        
-                        <div class="learn"></div>
+
+                        <div class="learn">
                             {{ cours.learn }}
+                        </div>
+                        
                         <div id="notions">
                             <div class="lessons">
                                 {{ cours.lessons }}
@@ -139,8 +141,19 @@ export default {
     #notions{
         display: flex;
         gap : 30px;
+
+        color: #696969;
     }
 }
+.price{
+    color:#20ad96;
+    font-weight: bolder;
+}
+.learn{
+    color: #3f3a64;
+    font-weight: bold;
+}
+
 #footer{
     text-align: center;
 
