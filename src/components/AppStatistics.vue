@@ -60,7 +60,7 @@ export default {
         justify-content: space-around;
         gap: 20px;
         
-        .scope{
+        .scope{ 
             color:#3F3A64;
             font-weight: bold;
         }

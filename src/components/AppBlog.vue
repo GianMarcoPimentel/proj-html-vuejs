@@ -69,7 +69,7 @@ export default {
 
 <style lang="scss" scoped>
 .appblog{
-    background-color: #F5F1ED;
+    background-color: #F5F1ED; 
    
 }
 .container{

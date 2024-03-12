@@ -64,7 +64,7 @@ export default {
     
             </div>
             <div class="choice">
-                <div
+                <div 
                 v-for="cours in courses"
                 id="courses" 
                 >

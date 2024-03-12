@@ -52,7 +52,7 @@ export default {
 
 </template>
 
-<style lang="scss">
+<style lang="scss"> 
 /* Stilizzo:
     - nav
     - links ( ul , li , input)

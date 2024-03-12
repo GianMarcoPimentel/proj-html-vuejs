@@ -27,7 +27,7 @@ export default {
 
 <template>
     
-  <div class="container">
+  <div class="container"> 
     <div class="footer">
         <div class="address">
             <h4>Address</h4>

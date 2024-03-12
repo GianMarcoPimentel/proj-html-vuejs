@@ -57,7 +57,7 @@ export default{
         color: #3f3a64;
         font-weight: bold;
 
-        span{
+        span{ 
             color: #20ad96;
             font-weight: normal;
         }

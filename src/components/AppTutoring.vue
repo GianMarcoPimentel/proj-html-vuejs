@@ -105,7 +105,7 @@ h3{
         color: #3f3a64;
 
         font-weight: bold;
-    }
+    } 
 }
 .videotutorial{
     display: flex;

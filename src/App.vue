@@ -23,7 +23,7 @@ export default {
     AppNav,
     AppHeader,
     AppCourses,
-    AppTutoring,
+    AppTutoring, 
     AppStart,
     AppStatistics,
     AppBlog,
