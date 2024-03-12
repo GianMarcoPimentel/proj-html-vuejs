@@ -70,7 +70,7 @@ export default {
 <style lang="scss" scoped>
 .appblog{
     background-color: #F5F1ED;
-    padding: 20px;
+   
 }
 .container{
     display: flex;

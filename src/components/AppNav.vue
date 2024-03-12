@@ -59,13 +59,10 @@ export default {
     
 */
 nav{
-    height: 60px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px 0px;
     color: #696969;
 
     .logo{

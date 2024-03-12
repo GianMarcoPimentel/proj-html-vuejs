@@ -51,7 +51,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 0px 20px;
 
     .block{
         display: flex;
