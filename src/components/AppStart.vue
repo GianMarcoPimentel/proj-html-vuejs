@@ -45,11 +45,18 @@ export default{
                 <img :src=" profile.image" alt="">
                 <div class="profile-user">
                     <h2>{{ profile.name }}</h2>
-                    <span>{{ profile.work }}</span>
+                    <span>{{ profile.work }}</span> 
                 </div>
             </div>
         </div>
+
     </div>
+    <div class="icon">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+        </div>
     <div class="container">
         <div class="started-now">
             <div>
@@ -78,32 +85,74 @@ export default{
 <style>
 .appstart{
     background-color: #f8f8f8;
+    padding: 30px ;
 }
 .profile-cards{
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
+    h2{
+        color: #3f3a64;
+    }
+    span{
+        color: #696969;
+    }
     .cards{
         width: calc(100% / 3 - (30px / 3 * 2));
-    }
-    .profile{
-        display: flex;
-        align-content: center;
+        height: 100%;
+        
+       
+        border-radius: 10px;
+        display: flex ;
+        flex-flow: column;
+        
         gap: 20px;
 
+        padding: 20px;
+        background-color: white;
+    }
+    
+    .profile{
+       
+        display: flex;
+        align-items: start;
+        gap: 20px;
+
+        padding: 20px;
         img{
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
         }
         .profile-user{
             display: flex;
             flex-flow: column;
             gap: 10px;
+
+            font-size: 10px;
         }
     }
 }
+.icon{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+    i{
+        color: #3f3a64;
+    opacity: 0.6;
+    }
+
+
+}
+i:hover{
+    opacity: 1;
+}
+
 .started-now{
     display: flex;
     justify-content: space-between;
