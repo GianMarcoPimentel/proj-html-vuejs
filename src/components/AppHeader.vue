@@ -40,17 +40,28 @@ export default{
         </div>
 
         <div class="introduction-image">
-            <img src="/public/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
-        </div>
-    </div>
-    <div class="logos">
-        <div 
-        v-for="logo in logos"
-        class="image">
-            <img :src="logo" alt="">
+            <img class="img-green" src="/public/images/maxcoach-shape-07-100x100.png" alt="">
+            <img class="img-gray" src="/public/images/maxcoach-shape-08.png" alt="">
+            <img class="img-gray2" src="/public/images/maxcoach-shape-08.png" alt="">
+            <img class="img-circle" src="/public/images/maxcoach-shape-02.png" alt="">
+            <div class="circle">
+
+            </div>
+
         </div>
     </div>
 </div>
+    <div class="container">
+
+        <div class="logos">
+            <div 
+            v-for="logo in logos"
+            class="image">
+                <img :src="logo" alt="">
+            </div>
+        </div>
+    </div>
+
 </template>
 
 <style>
@@ -101,13 +112,51 @@ export default{
         }
     }
     .introduction-image{
-        img{
             width: 370px;
             height: 370px;
             border-radius: 50%;
-            object-fit: cover;
-    
-        }
+
+            background-image: url("/public/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg");
+            background-size: cover;
+
+            position: relative;
+        
+            .img-green{
+                position: absolute;
+                bottom: 0;
+                right: 60px;
+                z-index: -2;
+            }
+            
+            .img-gray{
+                position: absolute;
+                top: 50px;
+                left: -80px;
+                z-index: -2;
+            }
+            .img-gray2{
+                position: absolute;
+                top: 150px;
+                left: -80px;
+                z-index: -2;
+            }
+            .img-circle{
+                width: 80px;
+                position: absolute;
+                top: 80px;
+                right: -80px;
+            }
+            .circle{
+                width: 50px;
+                height: 50px;
+                border: 5px solid #ECC5AB;
+                border-radius: 50%;
+
+                position: absolute;
+                bottom: 100px;
+                left: -40px;
+                z-index: -1;
+            }
     }
 }
     .logos{

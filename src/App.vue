@@ -77,12 +77,13 @@ button{
 .carrello{
   display: flex;
   flex-flow: column;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
   fill: inherit;
-  padding: 10px;
+  padding: 5px;
   border: lightgray solid 1px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 
 
   position:fixed;
