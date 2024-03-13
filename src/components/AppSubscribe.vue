@@ -21,9 +21,10 @@ export default {
         <input type="text" placeholder="Enter your email">
 
     </div>
-    <div class="image">
-        <img src="/public/images/maxcoach-shape-02.png" alt="">
-    </div>
+   
+        <img class="img-1" src="/public/images/maxcoach-shape-09.png" alt="">
+        <img class="img-2" src="/public/images/maxcoach-shape-02.png" alt="">
+    
    
 </div>
 </template>
@@ -31,12 +32,12 @@ export default {
 <style >
 .relative{
     position: relative;
-    .image{ 
+    /* .image{ 
         width: 80px;
         position: absolute;
         top:100px;
         right: -40px;
-    }
+    } */
     .circle{
         width: 50px;
         height: 50px;
@@ -72,6 +73,20 @@ export default {
 }
 p{
     text-align: center;
+}
+.img-1{
+     width: 150px;
+     position: absolute;
+     top: 40px;
+     right: 0;
+
+        
+    }
+.img-2{
+    width: 80px;
+    position: absolute;
+     top: 140px;
+     right: 20px;
 }
 
 </style>

@@ -67,8 +67,8 @@ export default{
                     Get strated now
                 </button>
             </div>
-            <div>
-                <img src="/public/images/maxcoach-shape-02.png" alt="">
+            <div class="img-circle">
+                <img  src="/public/images/maxcoach-shape-02.png" alt="">
             </div>
         </div>
     </div>
@@ -136,6 +136,17 @@ export default{
             padding: 12px 50px;
         }
 
+    }
+}
+.img-circle{
+    width: 80px;
+    position: relative;
+
+    img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 </style>
