@@ -134,7 +134,7 @@ h3{
         }
         .hookup{
             display: flex;
-            align-items: center;
+            align-items: center; 
             gap: 8px;
     
             color: #3f3a64;
