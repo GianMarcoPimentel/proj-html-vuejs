@@ -4,6 +4,8 @@ export default{
 
     data(){
         return {
+            activeProfileIndex : 0,
+
             profiles: [
                 {
                     presentation:"It's choice of quality for people with special needs",
@@ -26,19 +28,22 @@ export default{
                     name:'Madley Pondor',
                     work:'/ IT Specialist',
                 },
-
+                
             ]
         }
     }
 }
+
 </script>
 
 <template>
 <div class="appstart">
     <div class="profile-cards">
         <div 
-        v-for="profile in profiles"
+        v-for="(profile,index) in profiles"
+        v-show="index == activeIndexProfile"
         class="cards">
+        
             <h2>{{ profile.presentation }}</h2>
             <span>{{ profile.description }}</span>
             <div class="profile">
@@ -86,6 +91,7 @@ export default{
 .appstart{
     background-color: #f8f8f8;
     padding: 30px ;
+    margin-top: 30px;
 }
 .profile-cards{
     
