@@ -4,7 +4,7 @@ export default{
 
     data(){
         return {
-            activeProfileIndex : 0,
+            activeProfileIndex : '',
 
             profiles: [
                 {
@@ -31,7 +31,26 @@ export default{
                 
             ]
         }
+    },
+    methods : {
+        pointClick(){
+            this.activeProfileIndex == 0;
+            const profile = document.getElementById('cards');
+            profile.style.opacity = 1;
+        },
+        pointClick2(){
+            this.activeProfileIndex == 1;
+            const profile = document.getElementById('cards');
+            profile.style.opacity = 1;
+        },
+        pointClick3(){
+            this.activeProfileIndex == 2;
+            const profile = document.getElementById('cards');
+            profile.style.opacity = 1;
+        }
+        
     }
+
 }
 
 </script>
@@ -41,8 +60,9 @@ export default{
     <div class="profile-cards">
         <div 
         v-for="(profile,index) in profiles"
-        v-show="index == activeIndexProfile"
-        class="cards">
+        
+        id="cards"
+        style="opacity : 0.7">
         
             <h2>{{ profile.presentation }}</h2>
             <span>{{ profile.description }}</span>
@@ -57,9 +77,9 @@ export default{
 
     </div>
     <div class="icon">
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
+            <i @click="pointClick()" class="fa-solid fa-circle"></i>
+            <i @click="pointClick2()" class="fa-solid fa-circle"></i>
+            <i @click="pointClick3()" class="fa-solid fa-circle"></i>
             <i class="fa-solid fa-circle"></i>
         </div>
     <div class="container">
@@ -105,7 +125,7 @@ export default{
     span{
         color: #696969;
     }
-    .cards{
+    #cards{
         width: calc(100% / 3 - (30px / 3 * 2));
         height: 100%;
         
